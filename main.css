@@ -1,0 +1,72 @@
+* {
+    font-family: "Aestetico Formal Regular", "Helvetica", sans-serif;
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+/* button */
+.btn-dec {
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(20, 145, 255);
+    color: whitesmoke;
+    padding: 15px 15px 10px 15px;
+}
+
+/* nav menu */
+.nav-menu {
+    display: grid;
+    grid-template-columns: 1fr 6fr 2fr;
+    grid-template-areas:
+    "home navigations act-now";
+    margin-bottom: 100px;
+}
+
+.nav-menu__home-icon {
+    grid-area: home;
+}
+
+.nav-menu__home-icon > img {
+    width: 100px;
+}
+
+.nav-menu__nav, .nav-menu__act-now {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: smaller;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu__nav {
+    grid-area: navigations;
+}
+
+.nav-menu__act-now {
+    grid-area: act-now;
+}
+
+
+/* main body */
+.main-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "left right";
+}
+
+.main-body__text {
+    grid-area: left;
+}
+
+.main-body__video {
+    grid-area: right;
+}
+
+.main-body__video > iframe {
+    width: 540px;
+    height: 280px;
+    box-shadow: 0 0 5px 5px rgba(201, 201, 201, 0.3);
+    padding: 5px;
+}
