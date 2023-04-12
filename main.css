@@ -181,13 +181,20 @@
 .dinobuild__text > a {
     padding: 0;
     margin-left: 5px;
+    color: #69c5e4;
+    text-decoration: none;
 }
+
+/* .dinobuild__text > a:after, .dinobuild__text > a:before {
+    color: #69c5e4;
+} */
 
 
 /* options */
 .options {
     opacity: .70;
     margin-top: 50px;
+    margin-bottom: 50px;
     width: 70%;
     margin-left: 15%;
     display: grid;
@@ -220,4 +227,47 @@
 .options div p {
     margin-top: 0;
     padding-top: 5px;
+}
+
+.options__payment-text a {
+    margin-left: 5px;
+    color: #69c5e4;
+    text-decoration: none;
+}
+
+
+/* get started */
+.get-started {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 3fr 2fr 2fr;
+    background-color: #57bfe1;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    color: rgb(243, 235, 235);
+}
+
+.get-started h1 {
+    font-size: 40px;
+    font-weight: 400;
+    /* background-color: red; */
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.get-started h3 {
+    font-size: 20px;
+    font-weight: 400;
+    /* background-color: blue; */
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.get-started__btn.btn-dec {
+    max-width: 250px;
+    max-height: 50px;
+    justify-self: center;
+    background-color: rgb(0, 232, 0);
+    border: 1px solid rgb(0, 255, 0);
+    font-size: 18px;
 }
