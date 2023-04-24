@@ -1,13 +1,11 @@
 * {
     font-family: "Aestetico Formal Regular", "Helvetica", sans-serif;
-    width: 95%;
-    margin-left: 2.5%;
 }
 
-/* body div {
-    width: 95%;
-    margin-left: 2.5%;
-} */
+.nav-menu, .main-body, .branding, .dinobuild, .footer-columns, .footer-rows, .footer-copyrights {
+    max-width: 90%;
+    margin-left: 10%;
+}
 
 /* button */
 .btn-dec {
@@ -15,7 +13,7 @@
     font-weight: bold;
     border: none;
     /* blue */
-    background-color: rgb(20, 145, 255);
+    background-color: rgb(15, 120, 195);
     border: 1px solid rgb(0, 136, 255);
     color: whitesmoke;
 }
@@ -26,9 +24,8 @@
     grid-template-columns: 1fr 6fr 2fr;
     grid-template-areas:
     "home navigations act-now";
-    margin-bottom: 100px;
     margin-top: 25px;
-    margin-left: 50px;
+    max-width: 87%;
 }
 
 .nav-menu__home-icon {
@@ -36,7 +33,8 @@
 }
 
 .nav-menu__home-icon > img {
-    width: 100px;
+    width: 120px;
+    margin-right: 50px;
 }
 
 .nav-menu__nav, .nav-menu__act-now {
@@ -55,12 +53,17 @@
 
 .nav-menu__act-now {
     grid-area: act-now;
-    gap: 15px;
 }
 
 .nav-menu__sign-up.btn-dec {
-    padding: 13px 15px 8px 15px;
+    padding: 13px 18px 8px 18px;
     max-width: 100px;
+}
+
+.nav-menu__login {
+    text-transform: uppercase;
+    background-color: white;
+    border: none;
 }
 
 
@@ -136,7 +139,8 @@
     "brands";
     padding-bottom: 100px;
     /* light gray */
-    border-bottom: 1px solid rgb(222, 222, 222);
+    border-bottom: 2px solid rgb(222, 222, 222);
+    margin-right: 9%;
 }
 
 .branding__trust {
@@ -159,13 +163,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 43%;
     text-align: center;
 }
 
-.dinobuild__image {
-    max-width: 500px;
+/* .dinobuild__image {
+    max-width: 5px;
     margin-bottom: 50px;
+    margin-right: 10%;
+} */
+
+.dinobuild__image > img {
+    max-width: 70%;
+    height: auto;
 }
 
 .dinobuild__title, .dinobuild__text {
@@ -284,7 +294,7 @@
     grid-template-columns: repeat(5, 1fr);
     margin-top: 75px;
     margin-bottom: 50px;
-
+    margin-right: 10%;
 }
 
 .footer-columns__h6 {
@@ -307,7 +317,7 @@
 .footer-rows {
     color: rgb(110, 110, 110);
     font-size: 5px;
-    margin-left: 20px;
+    margin-right: 10%;
     font-weight: 100;
     padding-bottom: 25px;
     padding-left: 0;
@@ -366,12 +376,13 @@
 /* footer-copyrights */
 .footer-copyrights {
     margin-top: 25px;
+    margin-right: 10%;
     color: rgb(110, 110, 110);
     font-size: 4px;
-    margin-left: 20px;
     font-weight: 400;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .bbb {
